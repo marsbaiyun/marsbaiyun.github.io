@@ -3,11 +3,46 @@
   
     
     <entry>
-      <title>Hello World</title>
-      <link href="/2018/08/06/hello-world/"/>
-      <url>/2018/08/06/hello-world/</url>
-      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      <title>两数之和(Two Sum)</title>
+      <link href="/2018/08/20/%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C-Two-Sum/"/>
+      <url>/2018/08/20/%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C-Two-Sum/</url>
+      <content type="html"><![CDATA[<h4 id="题目一"><a href="#题目一" class="headerlink" title="题目一"></a>题目一</h4><p>给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。</p><p>你可以假设每个输入只对应一种答案，且同样的元素不能被重复利用。</p><h4 id="示例"><a href="#示例" class="headerlink" title="示例:"></a>示例:</h4><p>  给定 nums = [2, 7, 11, 15], target = 9</p><p>  因为 nums[0] + nums[1] = 2 + 7 = 9<br>  所以返回 [0, 1]</p><h4 id="我的解法："><a href="#我的解法：" class="headerlink" title="我的解法："></a>我的解法：</h4><pre><code>class Solution {    public int[] twoSum(int[] nums, int target) {        int[] result = null;        for(int i = 0;i &lt; nums.length;i ++){            if(result != null &amp;&amp; result.length == 2){                break;            }            for(int j = 0;j &lt; nums.length;j ++) {                if(j == i){                    continue;                }                if((nums[i] + nums[j]) == target){                    result = new int[]{i, j};                    break;                }            }        }        return result;    }}</code></pre><p><a href="https://leetcode-cn.com/articles/two-sum/" target="_blank" rel="noopener">官方解决方法</a></p><hr><h4 id="题目二"><a href="#题目二" class="headerlink" title="题目二"></a>题目二</h4><p>给定一个已按照升序排列 的有序数组，找到两个数使得它们相加之和等于目标数。</p><p>函数应该返回这两个下标值 index1 和 index2，其中 index1 必须小于 index2。</p><h5 id="说明"><a href="#说明" class="headerlink" title="说明:"></a>说明:</h5><ul><li>返回的下标值（index1 和 index2）不是从零开始的。</li><li>你可以假设每个输入只对应唯一的答案，而且你不可以重复使用相同的元素。</li></ul><h4 id="示例-1"><a href="#示例-1" class="headerlink" title="示例:"></a>示例:</h4><pre><code>输入: numbers = [2, 7, 11, 15], target = 9输出: [1,2]解释: 2 与 7 之和等于目标数 9 。因此 index1 = 1, index2 = 2 。</code></pre><h4 id="我的解法：-1"><a href="#我的解法：-1" class="headerlink" title="我的解法："></a>我的解法：</h4><pre><code>class Solution {    public int[] twoSum(int[] numbers, int target) {        Map&lt;Integer, Integer&gt; map = new HashMap&lt;&gt;();        for(int i = 0;i &lt; numbers.length;i ++){            int tmp = target - numbers[i];            if(map.containsKey(tmp) &amp;&amp; map.get(tmp) &lt; i){                return new int[]{map.get(tmp)+1, i+1};            }            map.put(numbers[i], i);        }        return null;    }}</code></pre><p>提交了之后，看到了执行结果耗时最短的解法：</p><pre><code>class Solution {    public int[] twoSum(int[] numbers, int target) {        int[] result=new int[2];        int i,j;        for(i=0,j=numbers.length-1;i&lt;j;)        {            if(numbers[i]+numbers[j]&gt;target){                j--;            }else if(numbers[i]+numbers[j]&lt;target){                i++;            }else break;        }        result[0]=i+1;        result[1]=j+1;        return result;    }}</code></pre><hr>]]></content>
       
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>时间慌</title>
+      <link href="/2018/08/17/%E6%97%B6%E9%97%B4%E6%85%8C/"/>
+      <url>/2018/08/17/%E6%97%B6%E9%97%B4%E6%85%8C/</url>
+      <content type="html"><![CDATA[]]></content>
+      
+      <categories>
+          
+          <category> 生活 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 吐槽 </tag>
+            
+        </tags>
       
     </entry>
     
