@@ -50,7 +50,7 @@
     
     <title>
         
-            两数之和(Two Sum) | 
+            leet code 刷题 | 
         
         Mars&#39;s Blog
     </title>
@@ -61,7 +61,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="个人博客">
-    <meta name="keywords" content=",技术,算法">
+    <meta name="keywords" content=",技术,算法,简单">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -222,7 +222,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Mars&#39;s Blog">
-    <meta name="msapplication-starturl" content="http://marsbaiyun.github.io/2018/08/20/两数之和-Two-Sum/">
+    <meta name="msapplication-starturl" content="http://marsbaiyun.github.io/2018/08/21/leet-code-刷题/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Mars&#39;s Blog">
@@ -237,16 +237,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://marsbaiyun.github.io/2018/08/20/两数之和-Two-Sum/">
+    <meta property="og:url" content="http://marsbaiyun.github.io/2018/08/21/leet-code-刷题/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="两数之和(Two Sum) | Mars&#39;s Blog">
+    <meta property="og:title" content="leet code 刷题 | Mars&#39;s Blog">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="个人博客">
-    <meta property="og:article:tag" content="技术"> <meta property="og:article:tag" content="算法"> 
+    <meta property="og:article:tag" content="技术"> <meta property="og:article:tag" content="算法"> <meta property="og:article:tag" content="简单"> 
 
     
-        <meta property="article:published_time" content="Mon Aug 20 2018 14:18:37 GMT+0800">
-        <meta property="article:modified_time" content="Mon Aug 20 2018 17:39:20 GMT+0800">
+        <meta property="article:published_time" content="Tue Aug 21 2018 16:39:57 GMT+0800">
+        <meta property="article:modified_time" content="Tue Aug 21 2018 19:15:05 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -254,7 +254,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://marsbaiyun.github.io/2018/08/20/两数之和-Two-Sum/index.html" />
+        <link rel="canonical" href="http://marsbaiyun.github.io/2018/08/21/leet-code-刷题/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -266,10 +266,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "http://marsbaiyun.github.io/2018/08/20/两数之和-Two-Sum/index.html",
-    "headline": "两数之和(Two Sum)",
-    "datePublished": "Mon Aug 20 2018 14:18:37 GMT+0800",
-    "dateModified": "Mon Aug 20 2018 17:39:20 GMT+0800",
+    "mainEntityOfPage": "http://marsbaiyun.github.io/2018/08/21/leet-code-刷题/index.html",
+    "headline": "leet code 刷题",
+    "datePublished": "Tue Aug 21 2018 16:39:57 GMT+0800",
+    "dateModified": "Tue Aug 21 2018 19:15:05 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Mars",
@@ -287,7 +287,7 @@
             "url": "/img/favicon.png"
         }
     },
-    "keywords": ",技术,算法",
+    "keywords": ",技术,算法,简单",
     "description": "个人博客",
 }
 </script>
@@ -361,7 +361,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#题目一"><span class="post-toc-number">1.</span> <span class="post-toc-text">题目一</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#示例"><span class="post-toc-number">2.</span> <span class="post-toc-text">示例:</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#我的解法："><span class="post-toc-number">3.</span> <span class="post-toc-text">我的解法：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#题目二-输入有序数组"><span class="post-toc-number">4.</span> <span class="post-toc-text">题目二 - 输入有序数组</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#说明"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">说明:</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#示例-1"><span class="post-toc-number">5.</span> <span class="post-toc-text">示例:</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#我的解法：-1"><span class="post-toc-number">6.</span> <span class="post-toc-text">我的解法：</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-两数之和-Two-Sum"><span class="post-toc-number">1.</span> <span class="post-toc-text">1.两数之和(Two Sum)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-两数相加-Add-Two-Numbers"><span class="post-toc-number">2.</span> <span class="post-toc-text">2. 两数相加(Add Two Numbers)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-无重复字符的最长子串-Longest-Substring-Without-Repeating-Characters"><span class="post-toc-number">3.</span> <span class="post-toc-text">3. 无重复字符的最长子串(Longest Substring Without Repeating Characters)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#题目二-输入有序数组"><span class="post-toc-number">4.</span> <span class="post-toc-text">题目二 - 输入有序数组</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#我的解法："><span class="post-toc-number">4.1.</span> <span class="post-toc-text">我的解法：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#耗时最短的解法："><span class="post-toc-number">4.2.</span> <span class="post-toc-text">耗时最短的解法：</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#7-反转整数-Reverse-Integer"><span class="post-toc-number">5.</span> <span class="post-toc-text">7.反转整数(Reverse Integer)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#我的解法：-1"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">我的解法：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#耗时最短的解法：-1"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">耗时最短的解法：</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#9-回文数-Palindrome-Number"><span class="post-toc-number">6.</span> <span class="post-toc-text">9.回文数(Palindrome Number)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#我的解法：-2"><span class="post-toc-number">6.1.</span> <span class="post-toc-text">我的解法：</span></a></li></ol></li></ol>
     </ul>
     
 
@@ -393,7 +393,7 @@
         
     
             <p class="article-headline-p">
-                两数之和(Two Sum)
+                leet code 刷题
             </p>
         </div>
 
@@ -412,7 +412,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>Mars</strong>
-        <span>8月 20, 2018</span>
+        <span>8月 21, 2018</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -436,7 +436,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/技术/">技术</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/算法/">算法</a>
+        <a class="post_tag-link" href="/tags/技术/">技术</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/简单/">简单</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/算法/">算法</a>
     </ul>
     
 
@@ -453,7 +453,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=两数之和(Two Sum)&url=http://marsbaiyun.github.io/2018/08/20/两数之和-Two-Sum/index.html&pic=http://marsbaiyun.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=leet code 刷题&url=http://marsbaiyun.github.io/2018/08/21/leet-code-刷题/index.html&pic=http://marsbaiyun.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -487,11 +487,15 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h4 id="题目一"><a href="#题目一" class="headerlink" title="题目一"></a>题目一</h4><p>给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。</p>
+        <h3 id="1-两数之和-Two-Sum"><a href="#1-两数之和-Two-Sum" class="headerlink" title="1.两数之和(Two Sum)"></a>1.两数之和(Two Sum)</h3><p>给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。</p>
 <p>你可以假设每个输入只对应一种答案，且同样的元素不能被重复利用。</p>
-<h4 id="示例"><a href="#示例" class="headerlink" title="示例:"></a>示例:</h4><p>  给定 nums = [2, 7, 11, 15], target = 9</p>
-<p>  因为 nums[0] + nums[1] = 2 + 7 = 9<br>  所以返回 [0, 1]</p>
-<h4 id="我的解法："><a href="#我的解法：" class="headerlink" title="我的解法："></a>我的解法：</h4><pre><code>class Solution {
+<p><strong>示例</strong></p>
+<pre><code>给定 nums = [2, 7, 11, 15], target = 9
+
+因为 nums[0] + nums[1] = 2 + 7 = 9
+所以返回 [0, 1]
+</code></pre><p><strong>我的解法</strong></p>
+<pre><code>class Solution {
     public int[] twoSum(int[] nums, int target) {
         int[] result = null;
         for(int i = 0;i &lt; nums.length;i ++){
@@ -511,18 +515,180 @@
         return result;
     }
 }
-</code></pre><p><a href="https://leetcode-cn.com/articles/two-sum/" target="_blank" rel="noopener">官方解决方法</a></p>
+</code></pre><p><strong>优解</strong></p>
+<p>遍历一次，在进行迭代并将元素插入到表中的同时，我们还会回过头来检查表中是否已经存在当前元素所对应的目标元素。如果它存在，那我们已经找到了对应解，并立即将其返回。</p>
+<pre><code>public int[] twoSum(int[] nums, int target) {
+    Map&lt;Integer, Integer&gt; map = new HashMap&lt;&gt;();
+    for (int i = 0; i &lt; nums.length; i++) {
+        int complement = target - nums[i];
+        if (map.containsKey(complement)) {
+            return new int[] { map.get(complement), i };
+        }
+        map.put(nums[i], i);
+    }
+    throw new IllegalArgumentException(&quot;No two sum solution&quot;);
+}
+</code></pre><p><strong>复杂度分析</strong></p>
+<p>时间复杂度：$O(n)$， 我们只遍历了包含有n个元素的列表一次。在表中进行的每次查找只花费$O(1)$的时间。</p>
+<p>空间复杂度：$O(n)$， 所需的额外空间取决于哈希表中存储的元素数量，该表最多需要存储n个元素。</p>
 <hr>
-<h4 id="题目二-输入有序数组"><a href="#题目二-输入有序数组" class="headerlink" title="题目二 - 输入有序数组"></a>题目二 - 输入有序数组</h4><p>给定一个已按照升序排列 的有序数组，找到两个数使得它们相加之和等于目标数。</p>
+<h3 id="2-两数相加-Add-Two-Numbers"><a href="#2-两数相加-Add-Two-Numbers" class="headerlink" title="2. 两数相加(Add Two Numbers)"></a>2. 两数相加(Add Two Numbers)</h3><p>给定两个非空链表来表示两个非负整数。位数按照逆序方式存储，它们的每个节点只存储单个数字。将两数相加返回一个新的链表。</p>
+<p>你可以假设除了数字 0 之外，这两个数字都不会以零开头。</p>
+<p><strong>示例</strong></p>
+<pre><code>输入：(2 -&gt; 4 -&gt; 3) + (5 -&gt; 6 -&gt; 4)
+输出：7 -&gt; 0 -&gt; 8
+原因：342 + 465 = 807
+</code></pre><p><strong>我的解法</strong></p>
+<pre><code>/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode resultNode = null;
+        ListNode tmpNode = null;
+        int sum = 0;
+        int tmp;
+        do {
+            if(l1 != null){
+                sum += l1.val;
+                l1 = l1.next;
+            }
+            if(l2 != null){
+                sum += l2.val;
+                l2 = l2.next;
+            }
+            ListNode nextNode = new ListNode(sum%10);
+            tmp = sum/10;
+            sum = tmp;
+            if(tmpNode == null){
+                resultNode = nextNode;
+            }else {
+                tmpNode.next = nextNode;
+            }
+            tmpNode = nextNode;
+        }
+        while (l1 != null || l2 != null);
+        if(tmp != 0){
+            tmpNode.next = new ListNode(tmp);
+        }
+        return resultNode;
+    }
+}
+</code></pre><p><strong>优解</strong></p>
+<pre><code>public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    ListNode dummyHead = new ListNode(0);
+    ListNode p = l1, q = l2, curr = dummyHead;
+    int carry = 0;
+    while (p != null || q != null) {
+        int x = (p != null) ? p.val : 0;
+        int y = (q != null) ? q.val : 0;
+        int sum = carry + x + y;
+        carry = sum / 10;
+        curr.next = new ListNode(sum % 10);
+        curr = curr.next;
+        if (p != null) p = p.next;
+        if (q != null) q = q.next;
+    }
+    if (carry &gt; 0) {
+        curr.next = new ListNode(carry);
+    }
+    return dummyHead.next;
+}
+</code></pre><p><strong>复杂度分析</strong></p>
+<p>时间复杂度：$O(\max(m, n))$，假设 m 和 n 分别表示 l1 和 l2 的长度，上面的算法最多重复 $\max(m, n)$ 次。</p>
+<p>空间复杂度：$O(\max(m, n))$， 新列表的长度最多为 $\max(m,n)$。</p>
+<hr>
+<h3 id="3-无重复字符的最长子串-Longest-Substring-Without-Repeating-Characters"><a href="#3-无重复字符的最长子串-Longest-Substring-Without-Repeating-Characters" class="headerlink" title="3. 无重复字符的最长子串(Longest Substring Without Repeating Characters)"></a>3. 无重复字符的最长子串(Longest Substring Without Repeating Characters)</h3><p>给定一个字符串，找出不含有重复字符的最长子串的长度。</p>
+<p><strong>示例 1</strong></p>
+<pre><code>输入: &quot;abcabcbb&quot;
+输出: 3 
+解释: 无重复字符的最长子串是 &quot;abc&quot;，其长度为 3。
+</code></pre><p><strong>示例 2</strong></p>
+<pre><code>输入: &quot;bbbbb&quot;
+输出: 1
+解释: 无重复字符的最长子串是 &quot;b&quot;，其长度为 1。
+</code></pre><p><strong>示例 3</strong></p>
+<pre><code>输入: &quot;pwwkew&quot;
+输出: 3
+解释: 无重复字符的最长子串是 &quot;wke&quot;，其长度为 3。
+     请注意，答案必须是一个子串，&quot;pwke&quot; 是一个子序列 而不是子串。
+</code></pre><blockquote>
+<p>这道题想了半个小时除了暴力遍历法没有想到别的思路遂放弃</p>
+</blockquote>
+<p><strong>推荐解决方案</strong><br><strong>滑动窗口</strong><br><strong>算法</strong></p>
+<p>在暴力法中，我们会反复检查一个子字符串是否含有有重复的字符，但这是没有必要的。如果从索引$i$到$j - 1$之间的子字符串$s_{ij}$已经被检查为没有重复字符。<br>我们只需要检查$s[j]$对应的字符是否已经存在于子字符串$s_{ij}$中。</p>
+<p>要检查一个字符是否已经在子字符串中，我们可以检查整个子字符串，这将产生一个复杂度为$O(n^2)$的算法，但我们可以做得更好。</p>
+<p>通过使用 <code>HashSet</code> 作为滑动窗口，我们可以用$O(1)$的时间来完成对字符是否在当前的子字符串中的检查。</p>
+<p>滑动窗口是数组/字符串问题中常用的抽象概念。 窗口通常是在数组/字符串中由开始和结束索引定义的一系列元素的集合，即 $[i, j)$（左闭，右开）。而滑动窗口是可以将两个边界向某一方向“滑动”的窗口。例如，我们将 $[i, j)$ 向右滑动 11 个元素，则它将变为 $[i+1, j+1)$（左闭，右开）。</p>
+<p>回到我们的问题，我们使用 <code>HashSet</code> 将字符存储在当前窗口 $[i, j)$（最初 j = ij=i）中。 然后我们向右侧滑动索引 j，如果它不在 <code>HashSet</code> 中，我们会继续滑动 j。直到 $s[j]$ 已经存在于 <code>HashSet</code> 中。此时，我们找到的没有重复字符的最长子字符串将会以索引 i 开头。如果我们对所有的 i 这样做，就可以得到答案。</p>
+<pre><code>public class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        int n = s.length();
+        Set&lt;Character&gt; set = new HashSet&lt;&gt;();
+        int ans = 0, i = 0, j = 0;
+        while (i &lt; n &amp;&amp; j &lt; n) {
+            // try to extend the range [i, j]
+            if (!set.contains(s.charAt(j))){
+                set.add(s.charAt(j++));
+                ans = Math.max(ans, j - i);
+            }
+            else {
+                set.remove(s.charAt(i++));
+            }
+        }
+        return ans;
+    }
+}
+</code></pre><p><strong>复杂度分析</strong></p>
+<ul>
+<li><p>时间复杂度：$O(2n) = O(n)$，在最糟糕的情况下，每个字符将被 i 和 j 访问两次。</p>
+</li>
+<li><p>空间复杂度：$O(min(m, n))$，与之前的方法相同。滑动窗口法需要 $O(k)$ 的空间，其中 k 表示 <code>Set</code> 的大小。而Set的大小取决于字符串 n 的大小以及字符集/字母 m 的大小。 </p>
+</li>
+</ul>
+<p><strong>优化的滑动窗口</strong><br><strong>算法</strong></p>
+<p>上述的方法最多需要执行 2n 个步骤。事实上，它可以被进一步优化为仅需要 n 个步骤。我们可以定义字符到索引的映射，而不是使用集合来判断一个字符是否存在。 当我们找到重复的字符时，我们可以立即跳过该窗口。</p>
+<p>也就是说，如果 $s[j]$ 在 $[i, j)$ 范围内有与 $j’$重复的字符，我们不需要逐渐增加 i 。 我们可以直接跳过 $[𝑖，𝑗′]$ 范围内的所有元素，并将 i 变为 $j’ + 1$。</p>
+<pre><code>public class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        int n = s.length(), ans = 0;
+        Map&lt;Character, Integer&gt; map = new HashMap&lt;&gt;(); // current index of character
+        // try to extend the range [i, j]
+        for (int j = 0, i = 0; j &lt; n; j++) {
+            if (map.containsKey(s.charAt(j))) {
+                i = Math.max(map.get(s.charAt(j)), i);
+            }
+            ans = Math.max(ans, j - i + 1);
+            map.put(s.charAt(j), j + 1);
+        }
+        return ans;
+    }
+}
+</code></pre><p><strong>复杂度分析</strong></p>
+<ul>
+<li><p>时间复杂度：$O(n)$，索引 j 将会迭代 n 次。</p>
+</li>
+<li><p>空间复杂度（<code>HashMap</code>）：$O(min(m, n))$，与之前的方法相同。</p>
+</li>
+</ul>
+<hr>
+<h3 id="题目二-输入有序数组"><a href="#题目二-输入有序数组" class="headerlink" title="题目二 - 输入有序数组"></a>题目二 - 输入有序数组</h3><p>给定一个已按照升序排列 的有序数组，找到两个数使得它们相加之和等于目标数。</p>
 <p>函数应该返回这两个下标值 index1 和 index2，其中 index1 必须小于 index2。</p>
-<h5 id="说明"><a href="#说明" class="headerlink" title="说明:"></a>说明:</h5><ul>
+<p><strong><em>说明:</em></strong></p>
+<ul>
 <li>返回的下标值（index1 和 index2）不是从零开始的。</li>
 <li>你可以假设每个输入只对应唯一的答案，而且你不可以重复使用相同的元素。</li>
 </ul>
-<h4 id="示例-1"><a href="#示例-1" class="headerlink" title="示例:"></a>示例:</h4><pre><code>输入: numbers = [2, 7, 11, 15], target = 9
+<p><strong><em>示例:</em></strong></p>
+<pre><code>输入: numbers = [2, 7, 11, 15], target = 9
 输出: [1,2]
 解释: 2 与 7 之和等于目标数 9 。因此 index1 = 1, index2 = 2 。
-</code></pre><h4 id="我的解法：-1"><a href="#我的解法：-1" class="headerlink" title="我的解法："></a>我的解法：</h4><pre><code>class Solution {
+</code></pre><h4 id="我的解法："><a href="#我的解法：" class="headerlink" title="我的解法："></a>我的解法：</h4><pre><code>class Solution {
     public int[] twoSum(int[] numbers, int target) {
         Map&lt;Integer, Integer&gt; map = new HashMap&lt;&gt;();
         for(int i = 0;i &lt; numbers.length;i ++){
@@ -535,8 +701,7 @@
         return null;
     }
 }
-</code></pre><p>提交了之后，看到了执行结果耗时最短的解法，果然厉害啊：</p>
-<pre><code>class Solution {
+</code></pre><h4 id="耗时最短的解法："><a href="#耗时最短的解法：" class="headerlink" title="耗时最短的解法："></a>耗时最短的解法：</h4><pre><code>class Solution {
     public int[] twoSum(int[] numbers, int target) {
         int[] result=new int[2];
         int i,j;
@@ -554,6 +719,107 @@
     }
 }
 </code></pre><hr>
+<h3 id="7-反转整数-Reverse-Integer"><a href="#7-反转整数-Reverse-Integer" class="headerlink" title="7.反转整数(Reverse Integer)"></a>7.反转整数(Reverse Integer)</h3><p>给定一个 32 位有符号整数，将整数中的数字进行反转。</p>
+<p><strong>示例 1:</strong></p>
+<pre><code>输入: 123
+输出: 321
+</code></pre><p><strong>示例 2:</strong></p>
+<pre><code>输入: -123
+输出: -321
+</code></pre><p><strong>示例 3:</strong></p>
+<pre><code>输入: 120
+输出: 21
+</code></pre><p><strong><em>注意:</em></strong></p>
+<p>假设我们的环境只能存储 32 位有符号整数，其数值范围是 [−231,  231 − 1]。根据这个假设，如果反转后的整数溢出，则返回 0。</p>
+<h4 id="我的解法：-1"><a href="#我的解法：-1" class="headerlink" title="我的解法："></a>我的解法：</h4><pre><code>class Solution {
+    public int reverse(int x) {
+        StringBuilder sb = new StringBuilder(&quot;&quot;);
+        String str = x+&quot;&quot;;
+        if(x &lt; 0){
+            sb.append(&quot;-&quot;);
+            str = str.substring(1);
+        }
+        for(int i = str.length()-1;i &gt;=0;i--){
+            if(i == str.length()-1 &amp;&amp; i !=0 &amp;&amp; String.valueOf(str.charAt(i)).equals(&quot;0&quot;)){
+                continue;
+            }
+            sb.append(str.charAt(i));
+        }
+        Integer i = null;
+        try {
+            i = Integer.valueOf(sb.toString());
+        } catch (NumberFormatException e) {
+            return 0;
+        }
+
+        return i.intValue();
+    }
+}
+</code></pre><h4 id="耗时最短的解法：-1"><a href="#耗时最短的解法：-1" class="headerlink" title="耗时最短的解法："></a>耗时最短的解法：</h4><pre><code>class Solution {
+    public int reverse(int x) {
+        int next = x;
+        /*
+         pop:反转数——余数
+          */
+        int pop = 0;
+        int result = 0;
+        do {
+            pop = next % 10;
+            next /= 10;
+            // 判断是否溢出
+
+            // MIN: -2147483648
+            if (result &lt; Integer.MIN_VALUE / 10 || result * 10 == Integer.MAX_VALUE &amp;&amp; pop &lt; -8) {
+                return 0;
+            }
+            // MAX:  2147483647
+            if (result &gt; Integer.MAX_VALUE /10 || result * 10 == Integer.MAX_VALUE &amp;&amp; pop &gt; 7) {
+                return 0;
+            }
+            result = result * 10 + pop;
+        }
+        while (next != 0);
+        return result;
+    }
+}
+</code></pre><hr>
+<h3 id="9-回文数-Palindrome-Number"><a href="#9-回文数-Palindrome-Number" class="headerlink" title="9.回文数(Palindrome Number)"></a>9.回文数(Palindrome Number)</h3><p>判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。</p>
+<p><strong><em>示例 1:</em></strong></p>
+<pre><code>输入: 121
+输出: true
+</code></pre><p><strong><em>示例 2:</em></strong></p>
+<pre><code>输入: -121
+输出: false
+解释: 从左向右读, 为 -121 。 从右向左读, 为 121- 。因此它不是一个回文数。
+</code></pre><p><strong><em>示例 3:</em></strong></p>
+<pre><code>输入: 10
+输出: false
+解释: 从右向左读, 为 01 。因此它不是一个回文数。
+</code></pre><p><strong><em>示例:</em></strong></p>
+<p>  给定 nums = [2, 7, 11, 15], target = 9</p>
+<p>  因为 nums[0] + nums[1] = 2 + 7 = 9<br>  所以返回 [0, 1]</p>
+<p><strong><em>进阶:</em></strong></p>
+<p>你能不将整数转为字符串来解决这个问题吗？</p>
+<h4 id="我的解法：-2"><a href="#我的解法：-2" class="headerlink" title="我的解法："></a>我的解法：</h4><pre><code>class Solution {
+    public boolean isPalindrome(int x) {
+        if(x &lt; 0 || String.valueOf(x).equals(&quot;-0&quot;)){
+            return false;
+        }
+        String str = String.valueOf(x);
+        int i,j;
+        for(i = 0,j = str.length()-1;i &lt;= j;){
+            if(str.charAt(i) == str.charAt(j)){
+                i++;
+                j--;
+            }else {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+</code></pre><p><a href="https://leetcode-cn.com/articles/palindrome-number/" target="_blank" rel="noopener">官方解决方法</a></p>
+<hr>
 
         
     
@@ -608,8 +874,8 @@
 
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://marsbaiyun.github.io/2018/08/20/两数之和-Two-Sum/';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://marsbaiyun.github.io/2018/08/20/两数之和-Two-Sum/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://marsbaiyun.github.io/2018/08/21/leet-code-刷题/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://marsbaiyun.github.io/2018/08/21/leet-code-刷题/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 
@@ -1077,7 +1343,24 @@ console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viose
 </script>
 
                 </main>
-            </div><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+            </div><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
         </body>
     
 </html>
